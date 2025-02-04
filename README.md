@@ -49,6 +49,11 @@
     *   Dirección: [Tu dirección]
     *   Teléfono: [Tu teléfono]
     *   Correo electrónico: [Tu correo electrónico]
+ 
+
+    <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2025/02/04/04/20250204044814-U5MEMA25.js"></script>
+    
 
 ## Pie de página
 
