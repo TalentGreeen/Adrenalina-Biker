@@ -1,58 +1,279 @@
-# Adrenalina Biker
+<!DOCTYPE html>
+<html lang="es">
 
-## Encabezado
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adrenalina Biker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            background-color: #111;
+            color: #eee;
+        }
 
-*   **Logo:** [Imagen de logo.png]
-*   **Navegación:**
-    *   Inicio
-    *   Productos
-    *   Sobre nosotros
-    *   Contacto
-*   **Llamada a la acción:** Comprar ahora
+        header {
+            background-color: #222;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-## Hero
+        .logo img {
+            max-height: 50px;
+        }
 
-*   **Título:** Adrenalina Biker: Tu pasión por las motos comienza aquí
-*   **Subtítulo:** Encuentra los mejores accesorios y la comunidad biker que estabas buscando
-*   **Llamada a la acción:** Descubre nuestros productos
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
 
-## Productos destacados
+        nav li {
+            margin-left: 20px;
+        }
 
-*   **Título:** Nuestros productos estrella
-*   **Galería de productos:**
-    *   [Imagen de casco.jpg]
-        *   Casco de alta gama
-        *   Descripción breve del producto
-    *   [Imagen de guantes.jpg]
-        *   Guantes de cuero
-        *   Descripción breve del producto
-    *   [Imagen de escape.jpg]
-        *   Escape deportivo
-        *   Descripción breve del producto
+        nav a {
+            color: #eee;
+            text-decoration: none;
+        }
 
-## Sobre nosotros
+        .cta button {
+            background-color: #f00;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
 
-*   **Título:** Somos Adrenalina Biker
-*   **Texto:** En Adrenalina Biker, no solo encontrarás los mejores accesorios para tu moto ⚙️, sino también un espacio donde compartir tu pasión por el motociclismo. Somos un equipo de entusiastas que entendemos la emoción y la libertad que se siente sobre dos ruedas , y queremos transmitirte esa misma adrenalina. ¡Únete a nuestra comunidad de bikers! ️
+        .hero {
+            background-image: url("moto-futurista.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-## Testimonios
+        .hero-content {
+            text-align: center;
+            color: #fff;
+        }
 
-*   **Título:** Lo que dicen nuestros clientes
-*   **Testimonios:**
-    *   "Los mejores accesorios que he encontrado. ¡Recomendado!" - Juan Pérez
-    *   "Excelente servicio y productos de alta calidad." - María Gómez
+        .hero h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
 
-## Contacto
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
 
-*   **Título:** Visítanos o contáctanos
-*   **Información de contacto:**
-    *   Dirección: [Tu dirección]
-    *   Teléfono: [Tu teléfono]
-    *   Correo electrónico: [Tu correo electrónico]
- 
- <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
- <script src="https://files.bpcontent.cloud/2025/02/04/04/20250204044814-U5MEMA25.js"></script>
+        .hero button {
+            background-color: #f00;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
 
-## Pie de página
+        .featured-products {
+            padding: 40px;
+            text-align: center;
+        }
 
-*   **Texto:** © 2023 Adrenalina Biker. Todos los derechos reservados.
+        .featured-products h2 {
+            margin-bottom: 30px;
+        }
+
+        .product-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .product {
+            width: 300px;
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .about-us,
+        .testimonials,
+        .contact {
+            padding: 40px;
+        }
+
+        footer {
+            background-color: #222;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Estilos para la sección de productos */
+        .productos {
+            padding: 40px;
+        }
+
+        .productos h2 {
+            margin-bottom: 20px;
+        }
+
+        .categorias {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .categoria {
+            width: 25%;
+        }
+
+        .categoria h3 {
+            margin-bottom: 10px;
+        }
+
+        .categoria ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .categoria li a {
+            color: #eee;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Adrenalina Biker Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="cta">
+            <button>Compra ahora</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Adrenalina Biker: Tu pasión por las motos comienza aquí</h1>
+            <p>Encuentra los mejores accesorios y la comunidad biker que estabas buscando</p>
+            <button>Descubre nuestros productos</button>
+        </div>
+    </section>
+
+    <section class="featured-products">
+        <h2>Nuestros productos estrella</h2>
+        <div class="product-gallery">
+            <div class="product">
+                <img src="casco.jpg" alt="Casco">
+                <h3>Casco de alta gama</h3>
+                <p>Descripción breve del producto</p>
+            </div>
+            <div class="product">
+                <img src="guantes.jpg" alt="Guantes">
+                <h3>Guantes de cuero</h3>
+                <p>Descripción breve del producto</p>
+            </div>
+            <div class="product">
+                <img src="escape.jpg" alt="Escape">
+                <h3>Escape deportivo</h3>
+                <p>Descripción breve del producto</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us">
+        <h2>Somos Adrenalina Biker</h2>
+        <p>En Adrenalina Biker, no solo encontrarás los mejores accesorios para tu moto ⚙️, sino también un espacio donde compartir tu pasión por el motociclismo. Somos un equipo de entusiastas que entendemos la emoción y la libertad que se siente sobre dos ruedas , y queremos transmitirte esa misma adrenalina. ¡Únete a nuestra comunidad de bikers! ️</p>
+    </section>
+
+    <section class="testimonials">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div class="testimonial">
+            <p>"Los mejores accesorios que he encontrado. ¡Recomendado!"</p>
+            <p>- Juan Pérez</p>
+        </div>
+        <div class="testimonial">
+            <p>"Excelente servicio y productos de alta calidad."</p>
+            <p>- María Gómez</p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Visítanos o contáctanos</h2>
+        <p>Dirección: [Tu dirección]</p>
+        <p>Teléfono: [Tu teléfono]</p>
+        <p>Correo electrónico: [Tu correo electrónico]</p>
+    </section>
+
+    <section class="productos">
+        <h2>Productos</h2>
+        <div class="categorias">
+            <div class="categoria">
+                <h3>Accesorios de seguridad</h3>
+                <ul>
+                    <li><a href="#">Cascos</a>
+                        <ul>
+                            <li><a href="#">Integrales</a></li>
+                            <li><a href="#">Abatibles</a></li>
+                            <li><a href="#">Modulares</a></li>
+                            <li><a href="#">Enduro</a></li>
+                            <li><a href="#">Trial</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Chaquetas</a>
+                        <ul>
+                            <li><a href="#">De cuero</a></li>
+                            <li><a href="#">Textiles</a></li>
+                            <li><a href="#">Con protecciones</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Guantes</a>
+                        <ul>
+                            <li><a href="#">De verano</a></li>
+                            <li><a href="#">De invierno</a></li>
+                            <li><a href="#">Con protecciones</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Pantalones</a>
+                        <ul>
+                            <li><a href="#">De cuero</a></li>
+                            <li><a href="#">Textiles</a></li>
+                            <li><a href="#">Con protecciones</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Botas</a>
+                        <ul>
+                            <li><a href="#">De moto</a></li>
+                            <li><a href="#">Touring</a></li>
+                            <li><a href="#">Deportivas</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Protectores</a>
+                        <ul>
+                            <li><a href="#">
