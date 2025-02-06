@@ -8,6 +8,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         /* ... (estilos CSS anteriores) */
+
+        /* Estilos para el newsletter */
+        .newsletter {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .newsletter p {
+            margin-bottom: 10px;
+        }
+
+        .newsletter input[type="email"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 300px;
+            max-width: 100%;
+        }
+
+        .newsletter button {
+            background-color: #f00;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -97,6 +128,13 @@
         <p>Teléfono: 313 335 39 54 </p>
         <p>Correo electrónico: Adrenalinabiker@motosyaccesorios.com</p>
     </section>
+
+    <div class="newsletter">
+        <p>Suscríbete a nuestro Newsletter y obtén en tu correo todas nuestras ofertas y lanzamientos (Al suscribirte
+            aceptas nuestra <a href="#">Política de tratamiento de datos</a>)</p>
+        <input type="email" placeholder="Ingresa tu correo electrónico">
+        <button>Suscribirme</button>
+    </div>
 
     <footer>
         <p>&copy; 2023 Adrenalina Biker. Todos los derechos reservados.</p>
