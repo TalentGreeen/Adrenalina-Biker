@@ -7,31 +7,44 @@
     <title>Adrenalina Biker</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* ... (estilos CSS anteriores) */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            background-image: url("https://github.com/TalentGreeen/Adrenalina-Biker/blob/main/Imagen%20de%20fondo%20pagina%20Moto.png?raw=true");
+            background-size: cover;
+            background-position: center;
+            color: #eee;
+        }
 
-        /* Estilos para el newsletter */
-        .newsletter {
-            background-color: #333;
-            color: #fff;
+        header {
+            background-color: #222;
             padding: 20px;
-            margin-top: 20px;
-            text-align: center;
-            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        .newsletter p {
-            margin-bottom: 10px;
+        .logo img {
+            max-height: 50px;
         }
 
-        .newsletter input[type="email"] {
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            width: 300px;
-            max-width: 100%;
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
         }
 
-        .newsletter button {
+        nav li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            color: #eee;
+            text-decoration: none;
+        }
+
+        .cta button {
             background-color: #f00;
             color: #fff;
             padding: 10px 20px;
@@ -39,14 +52,84 @@
             border-radius: 5px;
             cursor: pointer;
         }
+
+        .hero {
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-content {
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .hero button {
+            background-color: #f00;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .featured-products {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .featured-products h2 {
+            margin-bottom: 30px;
+        }
+
+        .product-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .product {
+            width: 300px;
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .about-us,
+        .testimonials,
+        .contact {
+            padding: 40px;
+        }
+
+        footer {
+            background-color: #222;
+            padding: 25px;
+            text-align: center;
+        }
     </style>
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <img src="https://github.com/TalentGreeen/Adrenalina-Biker/blob/main/Logo%20Adrenalina%20Biker.png?raw=true"
-                alt="Adrenalina Biker Logo">
+            <img src="https://github.com/TalentGreeen/Adrenalina-Biker/blob/main/Logo%20Adrenalina%20Biker.png?raw=true" alt="Adrenalina Biker Logo">
         </div>
         <nav>
             <ul>
@@ -73,29 +156,19 @@
         <h2>Nuestros productos estrella</h2>
         <div class="product-gallery">
             <div class="product">
-                <img src="https://raw.githubusercontent.com/TalentGreeen/Adrenalina-biker/refs/heads/main/Airoh_Commander-2_20.jpg.webp"
-                    alt="Casco">
+                <img src="https://raw.githubusercontent.com/TalentGreeen/Adrenalina-biker/refs/heads/main/Airoh_Commander-2_20.jpg.webp" alt="Casco">
                 <h3>Casco de alta gama</h3>
-                <p>¿Quién dijo que la seguridad no puede tener estilo? Este casco te hará lucir increíble mientras
-                    te protege. Con un diseño moderno y aerodinámico, colores vibrantes y acabados de lujo, serás el
-                    centro de atención en cada ruta. ¡Marca la diferencia sobre dos ruedas!</p>
+                <p>¿Quién dijo que la seguridad no puede tener estilo? Este casco te hará lucir increíble mientras te protege. Con un diseño moderno y aerodinámico, colores vibrantes y acabados de lujo, serás el centro de atención en cada ruta. ¡Marca la diferencia sobre dos ruedas!</p>
             </div>
             <div class="product">
                 <img src="https://github.com/TalentGreeen/Adrenalina-Biker/blob/main/Guantes.png?raw=true" alt="Guantes">
                 <h3>Guantes de cuero</h3>
-                <p> No te conformes con menos. Nuestros guantes de moto en cuero están fabricados con piel de la
-                    más alta calidad, curtida y tratada para resistir el paso del tiempo y las condiciones más
-                    exigentes. Su construcción robusta y sus refuerzos estratégicos te brindan la máxima protección
-                    en caso de caídas o impactos. ¡Invierte en seguridad y calidad duradera!</p>
+                <p> No te conformes con menos. Nuestros guantes de moto en cuero están fabricados con piel de la más alta calidad, curtida y tratada para resistir el paso del tiempo y las condiciones más exigentes.  Su construcción robusta y sus refuerzos estratégicos te brindan la máxima protección en caso de caídas o impactos. ¡Invierte en seguridad y calidad duradera!</p>
             </div>
             <div class="product">
-                <img src="https://github.com/TalentGreeen/Adrenalina-Biker/blob/main/Accesorios%20Moto.png?raw=true"
-                    alt="Accesorios de lujo">
+                <img src="https://github.com/TalentGreeen/Adrenalina-Biker/blob/main/Accesorios%20Moto.png?raw=true" alt="Accesorios de lujo">
                 <h3>Accesorios de lujo</h3>
-                <p> ¿Quieres que tu moto sea única y refleje tu estilo? En Adrenalina Biker, te ofrecemos una
-                    selección exclusiva de accesorios de lujo, diseñados para los motociclistas más exigentes.
-                    Desde detalles en fibra de carbono hasta acabados premium, cada pieza está pensada para realzar
-                    la belleza y el rendimiento de tu moto. ¡Marca la diferencia sobre dos ruedas!</p>
+                <p> ¿Quieres que tu moto sea única y refleje tu estilo? En Adrenalina Biker, te ofrecemos una selección exclusiva de accesorios de lujo, diseñados para los motociclistas más exigentes. Desde detalles en fibra de carbono hasta acabados premium, cada pieza está pensada para realzar la belleza y el rendimiento de tu moto. ¡Marca la diferencia sobre dos ruedas!</p>
             </div>
         </div>
     </section>
@@ -104,10 +177,7 @@
         <h2>Somos Adrenalina Biker</h2>
         <p>¿Listo para vivir la adrenalina al máximo? ️</p>
 
-        <p>En Adrenalina Biker, no solo encontrarás los mejores accesorios para tu moto ⚙️, sino también un
-            espacio donde compartir tu pasión por el motociclismo. Somos un equipo de entusiastas que entendemos
-            la emoción y la libertad que se siente sobre dos ruedas , y queremos transmitirte esa misma
-            adrenalina. ¡Únete a nuestra comunidad de bikers!</p>
+        <p>En Adrenalina Biker, no solo encontrarás los mejores accesorios para tu moto ⚙️, sino también un espacio donde compartir tu pasión por el motociclismo. Somos un equipo de entusiastas que entendemos la emoción y la libertad que se siente sobre dos ruedas , y queremos transmitirte esa misma adrenalina. ¡Únete a nuestra comunidad de bikers!</p>
     </section>
 
     <section class="testimonials">
@@ -129,20 +199,10 @@
         <p>Correo electrónico: Adrenalinabiker@motosyaccesorios.com</p>
     </section>
 
-    <div class="newsletter">
-        <p>Suscríbete a nuestro Newsletter y obtén en tu correo todas nuestras ofertas y lanzamientos (Al suscribirte
-            aceptas nuestra <a href="#">Política de tratamiento de datos</a>)</p>
-        <input type="email" placeholder="Ingresa tu correo electrónico">
-        <button>Suscribirme</button>
-    </div>
-
     <footer>
         <p>&copy; 2023 Adrenalina Biker. Todos los derechos reservados.</p>
     </footer>
 
     <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
-    <script src="https://files.bpcontent.cloud/2025/02/04/04/20250204044814-U5MEMA25.js"></script>
+    <script src="https://files.bpcontent.cloud/2025/02/04/04/
 
-</body>
-
-</html>
